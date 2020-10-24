@@ -5,7 +5,7 @@ class Bullet:
         self.posy = posy
         self.width = 5
         self.height = 25
-        self.texture = pygame.image.load(os.path.join('textures','bullet.png'))
+        self.texture = pygame.image.load(os.path.join('textures','Bullet.png'))
 
 class Weapon:
     def self__init__(self,ats,dmg):
