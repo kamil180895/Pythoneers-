@@ -31,24 +31,24 @@ class Bullet:
                 bullets_enemy.pop(i)
 
         for i in len(enemy_list): #enemy hit
-        if bullets_player[i].posx - Bullet.width <= enemy_list[i].posx - enemy_list[i].width: # warunek na posx1
-            if bullets_player[i].posx + Bullet.width >= enemy_list[i].posx - enemy_list[i].width:
-                if bullets_player[i].posy + Bullet.height >= enemy_list[i].posy + enemy_list[i].height:  # warunek na posy1
-                    if bullets_player[i].posy - Bullet.height <= enemy_list[i].posy + enemy_list[i].height:
-                        enemy_list[i].hit = 1
-                if bullets_player[i].posy - Bullet.height <= enemy_list[i].posy - enemy_list[i].height:  # warunek na posy2
-                    if bullets_player[i].posy + Bullet.height >= enemy_list[i].posy - enemy_list[i].height:
-                        enemy_list[i].hit = 1
+            if bullets_player[i].posx - Bullet.width <= enemy_list[i].posx - enemy_list[i].width: # warunek na posx1
+                if bullets_player[i].posx + Bullet.width >= enemy_list[i].posx - enemy_list[i].width:
+                    if bullets_player[i].posy + Bullet.height >= enemy_list[i].posy + enemy_list[i].height:  # warunek na posy1
+                        if bullets_player[i].posy - Bullet.height <= enemy_list[i].posy + enemy_list[i].height:
+                            enemy_list[i].hit = 1
+                    if bullets_player[i].posy - Bullet.height <= enemy_list[i].posy - enemy_list[i].height:  # warunek na posy2
+                        if bullets_player[i].posy + Bullet.height >= enemy_list[i].posy - enemy_list[i].height:
+                            enemy_list[i].hit = 1
 
 
-        if bullets_player[i].posx + Bullet.width >= enemy_list[i].posx + enemy_list[i].width: # warunek na posx2
-            if bullets_player[i].posx - Bullet.width <= enemy_list[i].posx + enemy_list[i].width:
-                if bullets_player[i].posy + Bullet.height >= enemy_list[i].posy + enemy_list[i].height:  # warunek na posy1
-                    if bullets_player[i].posy - Bullet.height <= enemy_list[i].posy + enemy_list[i].height:
-                        enemy_list[i].hit = 1
-                if bullets_player[i].posy - Bullet.height <= enemy_list[i].posy - enemy_list[i].height:  # warunek na posy2
-                    if bullets_player[i].posy + Bullet.height >= enemy_list[i].posy - enemy_list[i].height:
-                        enemy_list[i].hit = 1
+            if bullets_player[i].posx + Bullet.width >= enemy_list[i].posx + enemy_list[i].width: # warunek na posx2
+                if bullets_player[i].posx - Bullet.width <= enemy_list[i].posx + enemy_list[i].width:
+                    if bullets_player[i].posy + Bullet.height >= enemy_list[i].posy + enemy_list[i].height:  # warunek na posy1
+                        if bullets_player[i].posy - Bullet.height <= enemy_list[i].posy + enemy_list[i].height:
+                            enemy_list[i].hit = 1
+                    if bullets_player[i].posy - Bullet.height <= enemy_list[i].posy - enemy_list[i].height:  # warunek na posy2
+                        if bullets_player[i].posy + Bullet.height >= enemy_list[i].posy - enemy_list[i].height:
+                            enemy_list[i].hit = 1
 
 
 
