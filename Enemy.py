@@ -1,6 +1,6 @@
 import time
 import pygame
-
+from World import *
 
 class Enemy(object):
 
@@ -41,7 +41,7 @@ class Enemy(object):
     def shoot(self):
         if self.vy ==0:
             if self.timer.tick() >= 0.5:
-                make_bullet_enemy()
+                make_bullet_enemy(self.x,self.y)
 
     def hit(self, dmg):
         self.hp -= dmg
@@ -55,4 +55,3 @@ class Enemy(object):
         self.movement(enemies)
         self.draw(window)
         self.shoot()
-
