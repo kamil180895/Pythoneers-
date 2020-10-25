@@ -1,3 +1,3 @@
 # Pythoneers-
 
-Nic nie mamy to nie działa
+Coś mamy, ale i tak nie działa
