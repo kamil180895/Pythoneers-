@@ -1,6 +1,9 @@
 import pygame, os
 from Window import *
 from World import *
+from Variables import *
+from PlayerCharacter import *
+from Weapon import *
 
 pygame.init()
 win = Window(1920, 1080)
