@@ -7,13 +7,13 @@ class Weapon:
         self.width = 5
         self.height = 25
         self.image = image
-        self.texture1 = pygame.image.load(os.path.join('textures', 'Bullet_player.png'))
-        self.texture1 = pygame.image.load(os.path.join('textures', 'Bullet_weapon.png'))
+        self.texture1 = pygame.image.load(os.path.join('textures', 'bullet_player.png'))
+        self.texture1 = pygame.image.load(os.path.join('textures', 'bullet_enemy.png'))
         self.ats = 20
         self.dmg = 17
 
-    texture1 = pygame.image.load(os.path.join('textures', 'Bullet_player.png'))
-    texture2 = pygame.image.load(os.path.join('textures', 'Bullet_weapon.png'))
+    texture1 = pygame.image.load(os.path.join('textures', 'bullet_player.png'))
+    texture2 = pygame.image.load(os.path.join('textures', 'bullet_enemy.png'))
 
     bullets_player = []
     bullets_enemy = []
