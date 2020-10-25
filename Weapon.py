@@ -7,14 +7,17 @@ class Weapon():
         self.width = 5
         self.height = 25
         self.texture1 = pygame.image.load(os.path.join('textures', 'bullet_player.png'))
+        self.texture2 = pygame.image.load(os.path.join('textures', 'bullet_enemy.png'))
         self.dmg = 17
 
     def bullets_move(self, bullets_player, bullets_enemy):
         for i in bullets_enemy:
-            blit()
             i.y -= 15
+            blit(self.texture2,(i.x,i.y))
+            
         for i in bullets_player:
-            i.y += 20
+            i.y -= 15
+            blit(self.texture2, (i.x, i.y))
 
     def bullets_sollision_check(self, bullets_player, bullets_enemy, enemy_list, Player.x, Player.y):
         for i in bullets_player:
