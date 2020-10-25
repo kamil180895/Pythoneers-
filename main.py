@@ -3,10 +3,10 @@ from Window import *
 from World import *
 
 pygame.init()
-win = Window()
-world = World()
+win = Window(1920, 1080)
+world = World(win)
 clock = pygame.time.Clock()
-state = "Menu"
+state = "Game"
 
 def handleInput():
     for event in pygame.event.get():
@@ -36,10 +36,9 @@ def update():
 
 
 def render():
-    win.win.fill((0,0,0))
-
     if state == "Game":
         world.draw(win.win)
+        win.update()
     elif state == "Menu":
         # tutaj render w menu
         pass
@@ -51,8 +50,8 @@ def render():
 
 
 if __name__ == '__main__':
-    clock.tick(60)
     while True:
+        clock.tick(60)
         handleInput()
         update()
         render()
