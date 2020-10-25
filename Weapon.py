@@ -1,7 +1,7 @@
 import pygame, os
 
-class Bullet:
-    def self__init__(self, posx, posy, width, height, texture, ats, dmg):
+class Weapon:
+    def self__init__(self, posx, posy):
         self.posx = posx
         self.posy = posy
         self.width = 5
