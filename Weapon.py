@@ -6,15 +6,15 @@ class Weapon():
         self.y = y
         self.width = 5
         self.height = 25
-        self.texture1 = pygame.image.load(os.path.join('textures', 'bullet_player.png'))
-        self.texture2 = pygame.image.load(os.path.join('textures', 'bullet_enemy.png'))
+        self.texture1 = pygame.image.load(os.path.join('textures', 'Bullet.png'))
+        self.texture2 = pygame.image.load(os.path.join('textures', 'BulletEnemy.png'))
         self.dmg = 17
 
     def bullets_move(self, bullets_player, bullets_enemy):
         for i in bullets_enemy:
             i.y -= 15
-            blit(self.texture2,(i.x,i.y))
-            
+            blit(self.texture2, (i.x,i.y))
+
         for i in bullets_player:
             i.y -= 15
             blit(self.texture2, (i.x, i.y))
@@ -95,3 +95,5 @@ class Weapon():
                         bullets_enemy[i].delete
                         return 0
         return 0
+
+
